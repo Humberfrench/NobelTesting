@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
@@ -6,3 +6,4 @@
 /ConsoleReturnJson/obj/ConsoleReturnJson.csproj.nuget.g.props
 /ConsoleReturnJson/obj/ConsoleReturnJson.csproj.nuget.g.targets
 /ConsoleReturnJson/.vs/ConsoleReturnJson/FileContentIndex/335b3975-5eab-4754-8c9a-1daf79abef48.vsidx
+ConsoleReturnJson/.vs/

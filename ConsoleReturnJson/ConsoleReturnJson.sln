@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleReturnJson", "ConsoleReturnJson.csproj", "{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Console Challenger", "1 - Console Challenger", "{FA65A283-76AE-4090-B354-131708909D7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254} = {FA65A283-76AE-4090-B354-131708909D7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F75E0D4A-80DA-4D5D-B420-B1EF47F14FC8}

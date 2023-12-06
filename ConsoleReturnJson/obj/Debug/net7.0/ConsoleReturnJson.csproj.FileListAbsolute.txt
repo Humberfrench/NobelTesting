@@ -1,0 +1,15 @@
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\bin\Debug\net7.0\ConsoleReturnJson.exe
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\bin\Debug\net7.0\ConsoleReturnJson.deps.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\bin\Debug\net7.0\ConsoleReturnJson.runtimeconfig.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\bin\Debug\net7.0\ConsoleReturnJson.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\bin\Debug\net7.0\ConsoleReturnJson.pdb
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.AssemblyInfo.cs
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.sourcelink.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\refint\ConsoleReturnJson.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.pdb
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ConsoleReturnJson.genruntimeconfig.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleReturnJson\obj\Debug\net7.0\ref\ConsoleReturnJson.dll

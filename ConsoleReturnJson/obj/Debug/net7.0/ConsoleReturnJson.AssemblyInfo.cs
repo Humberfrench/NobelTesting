@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleReturnJson")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3333dd180d80a829ecca9b04c908fd884043f9a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleReturnJson")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleReturnJson")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
