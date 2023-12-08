@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Test for Nobel</h1>
+        <p>List Valuee</p>
+        <div class="row p-2 m-2">
+            <div class="col-12">
+                <table class="table table-striped table-responsive" id="myTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:10%;">#</th>
+                            <th scope="col" style="width:30%;">Description</th>
+                            <th scope="col" style="width:60%;">Url</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>    
+        </div>    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+                const endpoint = 'https://api.sampleapis.com/codingresources/codingResources';
+        
+                async function fetchData() 
+                {
+                    const response = await fetch(endpoint);
+                    const data = await response.json();
+                    populateTable(data);
+                }
+
+                function populateTable(data) 
+                {
+                    const table = document.getElementById('myTable');
+                    
+                    data.forEach(item => {
+                        const row = table.insertRow();
+                        var link = "<a href='Verify.html?id=" + item.id + "'>" + item.description + "</a>";
+                        row.insertCell().innerText = item.id;
+                        row.insertCell().innerHTML = link ;
+                        row.insertCell().innerText = item.url;
+                    });
+                }
+                    
+                fetchData();
+            </script>
+</body>
+</html>

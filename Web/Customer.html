@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Test for Nobel</h1>
+        <p>Detais Values</p>
+        <div class="card shadow">
+            <div class="row p-2 m-2">
+                <div class="col-12 col-sm-8">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Name" name="Name" class="form-control form-control-lg" value="" onkeypress="GoPhone(event)" maxlength="50" required/>
+                        <label for="Name">Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="form-floating mb-3">
+                        <input type="tel" id="Phone" name="Phone" class="form-control form-control-lg" value="" onkeypress="GoResaon(event)" maxlength="15" required/>
+                        <label for="Phone">Phone</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Reason" name="Reason" class="form-control form-control-lg" value="" onkeypress="SaveForm(event)" maxlength="150" required/>
+                        <label for="Reason">Reason To Call</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row p-2 m-2">
+            <div class="col-12 col-sm-12">
+                <h5>Saved Data</h5>
+                <table class="table table-striped table-responsive" id="myTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:30%;">Name</th>                            
+                            <th scope="col" style="width:10%;">Phone</th>                            
+                            <th scope="col" style="width:60%;">Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>                
+            </div>
+       </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+                const endpoint = 'https://api.sampleapis.com/codingresources/codingResources';
+        
+                var customers = [];
+                var customer = function(name, phone, reason)
+                {
+                    this.name = name;
+                    this.phone = phone;
+                    this.reason = reason;
+                };
+
+                function populateTable(name, phone, reason) 
+                {
+                    const table = document.getElementById('myTable');
+
+                    const row = table.insertRow();
+                    row.insertCell().innerText = name;
+                    row.insertCell().innerText = phone ;
+                    row.insertCell().innerText = reason;
+
+                    customers.push(new customer(name, phone, reason));
+                }
+
+                function GoPhone(e)
+                {
+                    if(e.keyCode === 13)
+                    {
+                        const phone = document.getElementById('Phone');
+                        phone.focus();
+                    }
+                }
+                function GoResaon(e)
+                {
+                    if(e.keyCode === 13)
+                    {
+                        const reason = document.getElementById('Reason');
+                        reason.focus();
+                    }
+                }
+                function SaveForm(e)
+                {
+                    if(e.keyCode === 13)
+                    {
+                        const name = document.getElementById('Name');
+                        const phone = document.getElementById('Phone');
+                        const reason = document.getElementById('Reason');
+                        
+                        if(name.value === '')
+                        {
+                            alert('Field name could not be empty');
+                            name.focus();
+                            return;
+                        }
+
+                        if(phone.value === '')
+                        {
+                            alert('Field phone could not be empty');
+                            phone.focus();
+                            return;
+                        }
+
+                        if(reason.value === '')
+                        {
+                            alert('Field reason could not be empty');
+                            reason.focus();
+                            return;
+                        }
+
+                        populateTable(name.value, phone.value, reason.value);
+                    }
+                }
+             </script>
+</body>
+</html>

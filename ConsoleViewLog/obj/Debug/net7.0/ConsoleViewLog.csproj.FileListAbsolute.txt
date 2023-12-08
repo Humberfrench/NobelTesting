@@ -1,0 +1,15 @@
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.AssemblyInfoInputs.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.AssemblyInfo.cs
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.sourcelink.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\bin\Debug\net7.0\ConsoleViewLog.exe
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\bin\Debug\net7.0\ConsoleViewLog.deps.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\bin\Debug\net7.0\ConsoleViewLog.runtimeconfig.json
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\bin\Debug\net7.0\ConsoleViewLog.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\bin\Debug\net7.0\ConsoleViewLog.pdb
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\refint\ConsoleViewLog.dll
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.pdb
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ConsoleViewLog.genruntimeconfig.cache
+D:\Desenvolvimento\Testing for Jobs\NobelTesting\ConsoleViewLog\obj\Debug\net7.0\ref\ConsoleViewLog.dll

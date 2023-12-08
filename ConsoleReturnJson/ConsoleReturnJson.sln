@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleReturnJson", "Consol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Console Challenger", "1 - Console Challenger", "{FA65A283-76AE-4090-B354-131708909D7C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Log", "2 - Log", "{01E3E453-4254-4994-B8AE-380692159613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleViewLog", "..\ConsoleViewLog\ConsoleViewLog.csproj", "{7AB3CE8D-75E9-4600-9830-E9D394F53ACC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB3CE8D-75E9-4600-9830-E9D394F53ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB3CE8D-75E9-4600-9830-E9D394F53ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB3CE8D-75E9-4600-9830-E9D394F53ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB3CE8D-75E9-4600-9830-E9D394F53ACC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D766C86E-D2AA-4EAC-88A0-F8EED4CD8254} = {FA65A283-76AE-4090-B354-131708909D7C}
+		{7AB3CE8D-75E9-4600-9830-E9D394F53ACC} = {01E3E453-4254-4994-B8AE-380692159613}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F75E0D4A-80DA-4D5D-B420-B1EF47F14FC8}

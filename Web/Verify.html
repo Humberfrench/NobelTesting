@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Test for Nobel</h1>
+        <p>Detais Values</p>
+        <div class="card shadow">
+            <div class="row p-2 m-2">
+                <div class="col-12 col-sm-4">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Id" name="Id" class="form-control form-control-lg" value="" />
+                        <label for="Id">Id</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Description" name="Description" class="form-control form-control-lg" value="" />
+                        <label for="Description">Description</label>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="form-floating mb-3">
+                        <input type="text" id="Url" name="Url" class="form-control form-control-lg" value="" />
+                        <label for="Url">Url</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row p-2 m-2">
+            <div class="col-12 col-sm-4">
+                <h5>Types</h5>
+                <table class="table table-striped table-responsive" style="width:100%;" id="myTableTypes">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:10%;">Types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>                
+            </div>
+            <div class="col-12 col-sm-4">
+                <h5>Topics</h5>
+                <table class="table table-striped table-responsive" style="width:100%;" id="myTableTopics">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:10%;">Topics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="col-12 col-sm-4">
+                <h5>Levels</h5>
+                <table class="table table-striped table-responsive" style="width:100%;" id="myTableLevels">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width:10%;">Levels</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+                const endpoint = 'https://api.sampleapis.com/codingresources/codingResources';
+        
+                function getQueryStringParam(name) 
+                {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    return urlParams.get(name);
+                }
+
+                async function fetchData() 
+                {
+                    var id = getQueryStringParam('id');
+
+                    if(id === undefined || id == null)
+                    {
+                        alert('Error get id parameter');
+                        return;
+                    }
+                    const response = await fetch(endpoint);
+                    const data = await response.json();
+                    const filteredData = data.filter(item => item.id == id);
+                    populateTable(filteredData[0]);
+                }
+
+                function populateTable(data) 
+                {
+
+                    document.getElementById('Id').value = data.id;
+                    document.getElementById('Description').value = data.description;
+                    document.getElementById('Url').value = data.url;
+
+                    var types = data.types;
+                    var topics = data.topics;
+                    var levels = data.levels;                    
+                    var typesTable = document.getElementById('myTableTypes');
+                    var topicsTable = document.getElementById('myTableTopics');
+                    var levelsTable = document.getElementById('myTableLevels');
+
+                    types.forEach(item => {
+                        const row = typesTable.insertRow();
+                        row.insertCell().innerText = item;
+                    });
+
+                    topics.forEach(item => {
+                        const row = topicsTable.insertRow();
+                        row.insertCell().innerText = item;
+                    });
+
+                    levels.forEach(item => {
+                        const row = levelsTable.insertRow();
+                        row.insertCell().innerText = item;
+                    });
+                }
+                    
+                fetchData();
+            </script>
+</body>
+</html>
+
+<!-- 
+      {
+    "id": 1,
+    "description": "South Florida's Best Meetups on Youtube",
+    "url": "https://www.youtube.com/bocajs",
+    "types": [
+      "tutorial"
+    ],
+    "topics": [
+      "js",
+      "html"
+    ],
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ]
+  }
+-->
