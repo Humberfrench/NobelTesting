@@ -8,7 +8,7 @@ internal class Program
 
         Console.WriteLine(dados.ToString());
 
-        //result => Connections => 838; Licences => 0; Exits => 2077; ShowTransactions => 3289;
+        //Connections => 838; Licences => 541; Exits => 2077; ShowTransactions => 3289; 
     }
 
 
